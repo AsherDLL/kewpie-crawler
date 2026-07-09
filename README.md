@@ -69,10 +69,13 @@ Kewpie runs three tiers and moves up only when the response is challenged:
 | `browser` | headless nodriver / Camoufox (optional extra) | JS challenges, Turnstile, hydration |
 
 A structured challenge classifier decides when to escalate, based on status codes,
-anti-bot cookies (`cf_clearance`, `datadome`, `_abck`, ...), challenge headers,
-Turnstile/reCAPTCHA script markers, and tiny-HTML-shell / empty-extraction
-heuristics. Kewpie remembers per host which tier worked and starts there next
-time, and periodically probes one tier lower so it never gets stuck on the browser.
+active-challenge cookies, challenge headers, Turnstile/reCAPTCHA script markers,
+and tiny-HTML-shell / empty-extraction heuristics. Kewpie remembers per host which
+tier worked and starts there next time, and periodically probes one tier lower so
+it never gets stuck on the browser.
+
+For the full detection-stack rationale and the 2026 tool landscape, see
+[`docs/anti-bot.md`](docs/anti-bot.md).
 
 ## Two config files
 
@@ -101,8 +104,9 @@ hand-maintained bypasses break within days.
 
 Kewpie ships with conservative defaults: robots.txt is honored, rate limits are
 low, and it only reads public content. Prefer official APIs and RSS where they
-exist. See the responsible-use notes in the source. You are responsible for
-complying with each site's terms of service and the law in your jurisdiction.
+exist. See [`docs/ethics.md`](docs/ethics.md) for the full responsible-use
+guidance and per-platform posture. You are responsible for complying with each
+site's terms of service and the law in your jurisdiction.
 
 ## License
 
