@@ -10,7 +10,7 @@
     "items": [
       { "entity_id": 1, "full_name": "OpenAI", "known_name": null, "sector": "ai" },
       { "entity_id": 2, "full_name": "Cloudflare", "known_name": null, "sector": "infra" },
-      { "entity_id": 3, "full_name": "Anthropic", "known_name": null, "sector": "ai" }
+      { "entity_id": 3, "full_name": "Nvidia", "known_name": null, "sector": "semiconductors" }
     ]
   },
   "signals": {
