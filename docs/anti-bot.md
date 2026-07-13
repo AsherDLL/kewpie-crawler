@@ -45,10 +45,8 @@ is trivially detectable. `kewpie doctor` exists to catch exactly this.
 
 ## What Kewpie does
 
-Kewpie does not invent bypasses. Hand-maintained bypasses against Kasada or the
-latest DataDome break within days; that is a losing maintenance game. Instead
-Kewpie orchestrates best-of-breed open-source tools and adds the layer most of
-them lack.
+Kewpie does not invent bypasses. Instead it orchestrates best-of-breed
+open-source tools and adds the layer most of them lack.
 
 - **Layer 1 and 2** are handled by `curl_cffi`, which reproduces a real
   browser's TLS and HTTP/2 fingerprint. Kewpie pairs each impersonation target
@@ -104,7 +102,6 @@ Kewpie does not solve CAPTCHAs, defeat behavioral or heavily obfuscated
 protection (Kasada, aggressive DataDome), or scrape behind-login content. When a
 site needs that, the fetch result carries a `Verdict` naming the vendor and
 challenge kind so you can route it to a dedicated solver or a paid unblocker.
-This is a deliberate boundary, not a gap.
 
 ## Sources
 

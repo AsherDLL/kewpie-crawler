@@ -20,7 +20,7 @@ fingerprinting (Cloudflare, Akamai, DataDome at the fingerprint tier) sees a rea
 Chrome or Firefox. When a site serves an actual JavaScript challenge, Kewpie
 escalates to a headless browser rather than pretending the challenge page is data.
 
-Kewpie does not try to win a bypass arms race. It orchestrates best-of-breed
+Kewpie orchestrates best-of-breed
 open-source tools (`curl_cffi` for impersonation, `nodriver`/`camoufox` for the
 browser tier) and adds the orchestration layer that most scrapers lack. The full
 rationale is in [`docs/anti-bot.md`](docs/anti-bot.md).
@@ -112,11 +112,10 @@ python examples/reusability_demo.py   # prove domain independence on a non-footb
 ## Escalation beyond Kewpie
 
 Kewpie handles the passive-fingerprint tier and JS challenges its headless backend
-can auto-clear. It deliberately does not solve CAPTCHAs or defeat behavioral or
+can auto-clear. It does not solve CAPTCHAs or defeat behavioral or
 heavily-obfuscated protection (Kasada, aggressive DataDome). When a site needs
 that, the fetch result carries a `Verdict` naming the vendor and challenge kind so
-you can route it to a dedicated solver. This is a design choice, not a gap:
-hand-maintained bypasses break within days.
+you can route it to a dedicated solver.
 
 ## Ethics
 
