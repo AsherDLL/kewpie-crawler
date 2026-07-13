@@ -1,4 +1,4 @@
-# Kewpie Crawler
+# Kewpie Scraper
 
 A reusable, anti-bot-resistant, config-driven content collector.
 
@@ -28,10 +28,10 @@ rationale is in [`docs/anti-bot.md`](docs/anti-bot.md).
 ## Install
 
 ```bash
-pip install kewpie-crawler                 # HTTP tiers only (light)
-pip install "kewpie-crawler[browser]"      # + headless nodriver escalation tier
-pip install "kewpie-crawler[reddit]"       # + PRAW for the Reddit official API
-pip install "kewpie-crawler[all]"          # everything
+pip install kewpie-scraper                 # HTTP tiers only (light)
+pip install "kewpie-scraper[browser]"      # + headless nodriver escalation tier
+pip install "kewpie-scraper[reddit]"       # + PRAW for the Reddit official API
+pip install "kewpie-scraper[all]"          # everything
 ```
 
 Requires Python 3.12+.
@@ -98,7 +98,7 @@ end-to-end, non-football demo in `examples/reusability_demo.py`.
 ## Development and testing
 
 ```bash
-git clone <repo> && cd kewpie-crawler
+git clone <repo> && cd kewpie-scraper
 python -m venv .venv && . .venv/bin/activate
 pip install -e ".[dev,all]"
 
@@ -128,7 +128,7 @@ of service and the law in your jurisdiction.
 
 ## License
 
-Kewpie Crawler is free software, licensed under the GNU General Public License
+Kewpie Scraper is free software, licensed under the GNU General Public License
 version 3 or later (GPL-3.0-or-later). See [`LICENSE`](LICENSE) for the full text.
 
     Copyright (C) 2026 Asher Davila

@@ -17,7 +17,7 @@ from kewpie.pipeline import collect, extract
 SOURCES = {
     "defaults": {
         "rate_limit_per_second": 1.0,
-        "user_agent_contact": "kewpie-demo (+https://github.com/AsherDLL/kewpie-crawler)",
+        "user_agent_contact": "kewpie-demo (+https://github.com/AsherDLL/kewpie-scraper)",
         "max_tier": "impersonate",
     },
     "sources": [

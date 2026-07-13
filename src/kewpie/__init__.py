@@ -1,4 +1,4 @@
-"""Kewpie Crawler: a reusable, anti-bot-resistant, config-driven collector.
+"""Kewpie Scraper: a reusable, anti-bot-resistant, config-driven collector.
 
 Public API is assembled here. Submodules that pull optional dependencies
 (browser backends, PRAW) are import-guarded and not imported at package load.

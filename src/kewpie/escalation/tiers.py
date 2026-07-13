@@ -23,7 +23,7 @@ try:  # curl_cffi is a core dep; guard only to give a clean message.
 except ImportError:  # pragma: no cover
     cc_requests = None  # type: ignore[assignment]
 
-_DEFAULT_CONTACT_UA = "kewpie/0.1 (+https://github.com/AsherDLL/kewpie-crawler)"
+_DEFAULT_CONTACT_UA = "kewpie/0.1 (+https://github.com/AsherDLL/kewpie-scraper)"
 
 
 class CheapHttpTier:

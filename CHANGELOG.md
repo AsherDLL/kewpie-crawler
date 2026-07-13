@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to Kewpie Crawler are documented here. The format is loosely
+All notable changes to Kewpie Scraper are documented here. The format is loosely
 based on Keep a Changelog, and the project follows semantic versioning.
 
 ## [0.1.0] - unreleased

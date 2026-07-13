@@ -67,7 +67,7 @@ class RedditSource:
             import praw
         except ImportError as e:
             raise AuthError("reddit api mode needs the 'reddit' extra "
-                            "(pip install kewpie-crawler[reddit])") from e
+                            "(pip install kewpie-scraper[reddit])") from e
         api = self.cfg.get("api", {})
         cid = os.environ.get(api.get("client_id_env", "REDDIT_CLIENT_ID"))
         secret = os.environ.get(api.get("client_secret_env", "REDDIT_CLIENT_SECRET"))

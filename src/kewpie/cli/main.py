@@ -51,7 +51,7 @@ def _add_fetch(sub):
 
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(prog="kewpie",
-                                     description="Kewpie Crawler")
+                                     description="Kewpie Scraper")
     parser.add_argument("-v", "--verbose", action="store_true")
     sub = parser.add_subparsers(dest="command", required=True)
     _add_collect(sub)

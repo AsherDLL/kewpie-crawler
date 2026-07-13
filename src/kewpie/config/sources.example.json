@@ -4,7 +4,7 @@
     "rate_limit_per_second": 0.5,
     "cache_ttl_hours": 6,
     "respect_robots": true,
-    "user_agent_contact": "kewpie/0.1 (+https://github.com/AsherDLL/kewpie-crawler)",
+    "user_agent_contact": "kewpie/0.1 (+https://github.com/AsherDLL/kewpie-scraper)",
     "max_tier": "impersonate"
   },
   "sources": [
